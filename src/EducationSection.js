@@ -18,16 +18,12 @@ function EducationHistoryList() {
   });
   const listItems = newestEduFirst.map((edu) => (
     <li>
-      <Card>
+      <header>{edu.date}</header>
+      <div>
         <h3>{edu.title}</h3>
-        <h4>{edu.date}</h4>
-        <p>{edu.description}</p>
-      </Card>
+      </div>
+      <p>{edu.description}</p>
     </li>
   ));
-  return (
-    <div className="Education-History-List">
-      <ul>{listItems}</ul>
-    </div>
-  );
+  return <ul>{listItems}</ul>;
 }

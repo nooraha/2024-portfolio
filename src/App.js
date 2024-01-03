@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMeSection from "./AboutMeSection.js";
 import WorkExperienceSection from "./WorkExperienceSection.js";
 import EducationSection from "./EducationSection.js";
+import ProjectsSection from "./ProjectsSection.js";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <AboutMeSection />
         <WorkExperienceSection />
         <EducationSection />
+        <ProjectsSection />
       </div>
     </div>
   );
@@ -40,6 +42,15 @@ export function Section({ children }) {
 
 export function Card({ children }) {
   return <div className="Card">{children}</div>;
+}
+
+export function SkillsList({ skills }) {
+  const listItems = skills.map((skill) => (
+    <li>
+      <div>{skill}</div>
+    </li>
+  ));
+  return <ul>{listItems}</ul>;
 }
 
 export default App;

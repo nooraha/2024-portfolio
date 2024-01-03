@@ -1,4 +1,4 @@
-import { Card, Section, SectionTitle } from "./App.js";
+import { Card, Section, SectionTitle, SkillsList } from "./App.js";
 import { workExperience } from "./workexperienceData.js";
 
 export default function WorkExperienceSection() {
@@ -18,15 +18,15 @@ function WorkExperienceList() {
   });
   const listItems = newestWorkFirst.map((work) => (
     <li>
-      <Card>
-        <h3>{work.title}</h3>
-        <h4>{work.type}</h4>
-        <h4>{work.date}</h4>
-        <div className="Parallel">
-          <img alt={work.title} />
-          <p>{work.description}</p>
-        </div>
-      </Card>
+      <header>{work.date}</header>
+      <div>
+        <h3>
+          <div>{work.title}</div>
+          <div>{work.type}</div>
+        </h3>
+        <p>{work.description}</p>
+        <SkillsList skills={work.skills} />
+      </div>
     </li>
   ));
   return (

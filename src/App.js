@@ -1,13 +1,17 @@
 import "./App.css";
 import AboutMeSection from "./AboutMeSection.js";
 import WorkExperienceSection from "./WorkExperienceSection.js";
+import EducationSection from "./EducationSection.js";
 
 function App() {
   return (
     <div className="App">
-      <Title />
-      <AboutMeSection />
-      <WorkExperienceSection />
+      <div className="Section-Holder">
+        <Title />
+        <AboutMeSection />
+        <WorkExperienceSection />
+        <EducationSection />
+      </div>
     </div>
   );
 }

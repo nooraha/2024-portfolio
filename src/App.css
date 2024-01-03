@@ -1,4 +1,8 @@
 .App {
+  background-color: lightgray;
+}
+
+.Section-Holder {
   text-align: left;
   max-width: 800px;
   margin: auto;
@@ -8,8 +12,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 0px solid darkblue;
-  background-color: lightgreen;
+  border: 1px solid transparent;
+  background-color: white;
   border-radius: 20px;
   padding: 30px;
   flex-grow: 1;
@@ -24,6 +28,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
+  gap: 10px;
 }
 
 .Section {

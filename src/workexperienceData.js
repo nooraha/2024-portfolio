@@ -1,13 +1,5 @@
 export const workExperience = [
   {
-    id: 0,
-    title: "OP Financial Group, product development, customer feedback process",
-    date: "8.2.2021-12.2.2021",
-    type: "work practise program",
-    description:
-      "Designed logo for internal team use; Used tools such as Jira and ServiceNow.",
-  },
-  {
     id: 1,
     title: "Lundén Architecture Co",
     date: "13.12.2021-17.12.2021",

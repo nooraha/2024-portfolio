@@ -1,15 +1,12 @@
-import {
-  Card,
-  SectionTitle,
-  Section,
-  SkillsList,
-} from "../CommonComponents.js";
+import { Section, SkillsList } from "../CommonComponents.js";
 import { projects } from "../data/projectsData.js";
 
 export default function ProjectsSection() {
   return (
     <div>
-      <SectionTitle title="04. some of my projects & work" />
+      <h2 id="projects" className="SectionTitle">
+        04. some of my projects
+      </h2>
       <Section>
         <ProjectsList />
       </Section>

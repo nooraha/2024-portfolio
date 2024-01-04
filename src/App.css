@@ -2,10 +2,11 @@
   background-color: lightgray;
 }
 
-.Section-Holder {
+.SectionHolder {
   text-align: left;
   max-width: 800px;
   margin: auto;
+  padding: 80px;
 }
 
 .Card {
@@ -19,20 +20,39 @@
   padding: 30px;
 }
 
-.Parallel {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  gap: 10px;
+.Invisible {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0px;
+  margin: 0px;
 }
 
 .Section {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
+  flex-flow: column wrap;
   gap: 10px;
   border: 2px solid lightblue;
   margin-bottom: 50px;
+}
+
+.NavBar {
+  background-color: lightgreen;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+}
+
+.NavBar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.SectionTitle {
+  padding-top: 50px;
 }
 
 h1,
@@ -43,12 +63,13 @@ h5,
 h6,
 p {
   margin: 0px;
+  margin-bottom: 10px;
   padding: 0px;
 }
 
 img {
-  width: 300px;
-  height: auto;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 ul {
@@ -64,4 +85,11 @@ ul {
 ul li {
   width: 100%;
   margin-bottom: 20px;
+}
+
+header {
+  width: 100px;
+  margin: 0px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }

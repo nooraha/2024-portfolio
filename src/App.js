@@ -7,8 +7,8 @@ import ProjectsSection from "./sections/ProjectsSection.js";
 function App() {
   return (
     <div className="App">
-      <div className="Section-Holder">
-        <Title />
+      <NavBar />
+      <div className="SectionHolder">
         <AboutMeSection />
         <WorkExperienceSection />
         <EducationSection />
@@ -18,12 +18,13 @@ function App() {
   );
 }
 
-function Title() {
+function NavBar() {
   return (
-    <div className="Title">
-      <h4>Hello, I'm</h4>
-      <h1>Noora Halla-aho</h1>
-      <h4>junior software developer & artist</h4>
+    <div className="NavBar">
+      <a href="#aboutme">about me</a>
+      <a href="#workexperience">work experience</a>
+      <a href="#education">education</a>
+      <a href="#projects">projects</a>
     </div>
   );
 }

@@ -1,15 +1,12 @@
-import {
-  Card,
-  Section,
-  SectionTitle,
-  SkillsList,
-} from "../CommonComponents.js";
+import { Section, SkillsList } from "../CommonComponents.js";
 import { workExperience } from "../data/workexperienceData.js";
 
 export default function WorkExperienceSection() {
   return (
     <div>
-      <SectionTitle title="02. where I've worked" />
+      <h2 id="workexperience" className="SectionTitle">
+        02. where I've worked
+      </h2>
       <Section>
         <WorkExperienceList />
       </Section>

@@ -1,10 +1,12 @@
 import { education } from "../data/educationData.js";
-import { SectionTitle, Section, Card } from "../CommonComponents.js";
+import { Section } from "../CommonComponents.js";
 
 export default function EducationSection() {
   return (
     <div>
-      <SectionTitle title="03. my education" />
+      <h2 id="education" className="SectionTitle">
+        03. my education
+      </h2>
       <Section>
         <EducationHistoryList />
       </Section>

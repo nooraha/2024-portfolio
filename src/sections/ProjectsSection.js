@@ -1,5 +1,10 @@
-import { Card, SectionTitle, Section, SkillsList } from "./App.js";
-import { projects } from "./projectsData.js";
+import {
+  Card,
+  SectionTitle,
+  Section,
+  SkillsList,
+} from "../CommonComponents.js";
+import { projects } from "../data/projectsData.js";
 
 export default function ProjectsSection() {
   return (
@@ -17,7 +22,7 @@ function ProjectsList() {
     return b.id - a.id;
   });
   const listItems = newestProjectsFirst.map((project) => (
-    <li>
+    <li className="Card">
       <header>image</header>
       <div>
         <h3>

@@ -10,18 +10,13 @@
 
 .Card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+  gap: 30px;
   border: 1px solid transparent;
   background-color: white;
   border-radius: 20px;
   padding: 30px;
-  flex-grow: 1;
-}
-
-.Card img {
-  max-width: 500px;
-  height: 300px;
 }
 
 .Parallel {

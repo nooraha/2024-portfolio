@@ -1,5 +1,5 @@
-import { education } from "./educationData.js";
-import { SectionTitle, Section, Card } from "./App.js";
+import { education } from "../data/educationData.js";
+import { SectionTitle, Section, Card } from "../CommonComponents.js";
 
 export default function EducationSection() {
   return (
@@ -17,7 +17,7 @@ function EducationHistoryList() {
     return b.id - a.id;
   });
   const listItems = newestEduFirst.map((edu) => (
-    <li>
+    <li className="Card">
       <header>{edu.date}</header>
       <div>
         <h3>{edu.title}</h3>

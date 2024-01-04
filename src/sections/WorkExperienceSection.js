@@ -1,5 +1,10 @@
-import { Card, Section, SectionTitle, SkillsList } from "./App.js";
-import { workExperience } from "./workexperienceData.js";
+import {
+  Card,
+  Section,
+  SectionTitle,
+  SkillsList,
+} from "../CommonComponents.js";
+import { workExperience } from "../data/workexperienceData.js";
 
 export default function WorkExperienceSection() {
   return (
@@ -17,7 +22,7 @@ function WorkExperienceList() {
     return b.id - a.id;
   });
   const listItems = newestWorkFirst.map((work) => (
-    <li>
+    <li className="Card">
       <header>{work.date}</header>
       <div>
         <h3>

@@ -1,8 +1,8 @@
 import "./App.css";
-import AboutMeSection from "./AboutMeSection.js";
-import WorkExperienceSection from "./WorkExperienceSection.js";
-import EducationSection from "./EducationSection.js";
-import ProjectsSection from "./ProjectsSection.js";
+import AboutMeSection from "./sections/AboutMeSection.js";
+import WorkExperienceSection from "./sections/WorkExperienceSection.js";
+import EducationSection from "./sections/EducationSection.js";
+import ProjectsSection from "./sections/ProjectsSection.js";
 
 function App() {
   return (
@@ -26,31 +26,6 @@ function Title() {
       <h4>junior software developer & artist</h4>
     </div>
   );
-}
-
-export function SectionTitle({ title }) {
-  return (
-    <div className="Section-Title">
-      <h2>{title}</h2>
-    </div>
-  );
-}
-
-export function Section({ children }) {
-  return <div className="Section">{children}</div>;
-}
-
-export function Card({ children }) {
-  return <div className="Card">{children}</div>;
-}
-
-export function SkillsList({ skills }) {
-  const listItems = skills.map((skill) => (
-    <li>
-      <div>{skill}</div>
-    </li>
-  ));
-  return <ul>{listItems}</ul>;
 }
 
 export default App;

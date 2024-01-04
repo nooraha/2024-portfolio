@@ -31,9 +31,5 @@ function WorkExperienceList() {
       </div>
     </li>
   ));
-  return (
-    <div className="Work-Experience-List">
-      <ul>{listItems}</ul>
-    </div>
-  );
+  return <ul className="CardList">{listItems}</ul>;
 }

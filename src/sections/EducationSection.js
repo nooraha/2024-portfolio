@@ -27,5 +27,5 @@ function EducationHistoryList() {
       <p>{edu.description}</p>
     </li>
   ));
-  return <ul>{listItems}</ul>;
+  return <ul className="CardList">{listItems}</ul>;
 }

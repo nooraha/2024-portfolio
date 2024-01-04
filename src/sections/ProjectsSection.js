@@ -33,5 +33,5 @@ function ProjectsList() {
       </div>
     </li>
   ));
-  return <ul>{listItems}</ul>;
+  return <ul className="CardList">{listItems}</ul>;
 }

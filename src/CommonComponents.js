@@ -8,5 +8,5 @@ export function SkillsList({ skills }) {
       <div>{skill}</div>
     </li>
   ));
-  return <ul>{listItems}</ul>;
+  return <ul className="SkillsList">{listItems}</ul>;
 }

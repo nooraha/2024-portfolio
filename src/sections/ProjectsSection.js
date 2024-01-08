@@ -1,5 +1,6 @@
 import { Section, SkillsList } from "../CommonComponents.js";
 import { projects } from "../data/projectsData.js";
+import placeholderimg from "../images/test_img.jpg";
 
 export default function ProjectsSection() {
   return (
@@ -20,7 +21,9 @@ function ProjectsList() {
   });
   const listItems = newestProjectsFirst.map((project) => (
     <li className="Card">
-      <header>image</header>
+      <header className="ImageHeader">
+        <img src={placeholderimg}></img>
+      </header>
       <div>
         <h3>
           <div>

@@ -24,6 +24,6 @@ export const projects = [
     date: "fall 2023",
     description: "A retro arcade game-style shooter built with pygame.",
     imglink: "",
-    skills: ["Python", "Git", "pygame", "mediapipe", "cv2"],
+    skills: ["Python", "Git", "MySQL", "pygame", "mediapipe", "cv2"],
   },
 ];

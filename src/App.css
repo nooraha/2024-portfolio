@@ -1,17 +1,41 @@
 .App {
-  background-color: lightgray;
+  background-image: linear-gradient(to bottom right, darkblue, lavender);
+  height: 100vh;
+  width: 100vw;
+}
+
+.PageHolder {
+  max-width: 900px;
+  height: 100%;
+  margin: auto;
+  padding-top: 80px;
+  text-align: left;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+  background-color: slategray;
+  overflow: scroll;
+  border: 30px solid slategray;
 }
 
 .SectionHolder {
-  text-align: left;
-  max-width: 800px;
-  margin: auto;
-  padding: 80px;
+  margin: 0px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: auto;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.MainHeader {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .Card {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   align-items: flex-start;
   gap: 30px;
   border: 1px solid transparent;
@@ -31,7 +55,6 @@
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
-  border: 2px solid lightblue;
   margin-bottom: 50px;
 }
 
@@ -41,7 +64,7 @@
   flex-flow: row nowrap;
   justify-content: flex-end;
   width: 100%;
-  position: fixed;
+  position: absolute;
 }
 
 .NavBar a {
@@ -49,10 +72,6 @@
   display: block;
   text-align: center;
   padding: 10px;
-}
-
-.SectionTitle {
-  padding-top: 50px;
 }
 
 .SkillsList {
@@ -79,6 +98,24 @@
   margin-bottom: 20px;
 }
 
+.ColumnToRow {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.ContactInfoBox {
+}
+
+.ImageHeader {
+  width: 55%;
+}
+
+.InlineImg {
+  width: 200px;
+}
+
 h1,
 h2,
 h3,
@@ -92,8 +129,8 @@ p {
 }
 
 img {
-  max-width: 300px;
-  max-height: 300px;
+  height: auto;
+  max-width: 100%;
   border: 1px solid transparent;
   border-radius: 10px;
 }
@@ -106,7 +143,7 @@ ul {
 }
 
 header {
-  width: 100px;
+  width: 25%;
   margin: 0px;
   flex-shrink: 0;
   flex-grow: 0;
@@ -118,4 +155,28 @@ button {
   background-color: lightgreen;
   padding: 10px 20px 10px 20px;
   font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  .PageHolder {
+    flex-flow: column nowrap;
+    gap: 30px;
+  }
+
+  .SectionHolder {
+    width: 100%;
+  }
+
+  .MainHeader {
+    width: 100%;
+  }
+
+  .ColumnToRow {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
 }

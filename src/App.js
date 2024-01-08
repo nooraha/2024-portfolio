@@ -1,4 +1,5 @@
 import "./App.css";
+import Introduction from "./sections/Introduction.js";
 import AboutMeSection from "./sections/AboutMeSection.js";
 import WorkExperienceSection from "./sections/WorkExperienceSection.js";
 import EducationSection from "./sections/EducationSection.js";
@@ -8,11 +9,16 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="SectionHolder">
-        <AboutMeSection />
-        <WorkExperienceSection />
-        <EducationSection />
-        <ProjectsSection />
+      <div className="PageHolder">
+        <div className="MainHeader">
+          <Introduction />
+        </div>
+        <div className="SectionHolder">
+          <AboutMeSection />
+          <WorkExperienceSection />
+          <EducationSection />
+          <ProjectsSection />
+        </div>
       </div>
     </div>
   );

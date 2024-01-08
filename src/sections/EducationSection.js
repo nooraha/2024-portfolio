@@ -20,11 +20,11 @@ function EducationHistoryList() {
   });
   const listItems = newestEduFirst.map((edu) => (
     <li className="Card">
-      <header>{edu.date}</header>
       <div>
         <h3>{edu.title}</h3>
+        <p>{edu.description}</p>
       </div>
-      <p>{edu.description}</p>
+      <header>{edu.date}</header>
     </li>
   ));
   return <ul className="CardList">{listItems}</ul>;

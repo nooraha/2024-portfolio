@@ -3,7 +3,7 @@ import self_portrait from "../images/old_cv_picture.png";
 
 export default function Introduction() {
   return (
-    <div>
+    <div className="Sticky">
       <Section>
         <div className="ColumnToRow">
           <div className="ColumnToRow">

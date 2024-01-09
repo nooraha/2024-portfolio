@@ -1,12 +1,12 @@
 .App {
   background-image: linear-gradient(to bottom right, darkblue, lavender);
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
 }
 
 .PageHolder {
   max-width: 900px;
-  height: 100%;
+  height: auto;
   margin: auto;
   padding-top: 80px;
   text-align: left;
@@ -14,7 +14,6 @@
   flex-flow: row nowrap;
   gap: 30px;
   background-color: slategray;
-  overflow: scroll;
   border: 30px solid slategray;
 }
 
@@ -23,14 +22,18 @@
   flex-shrink: 1;
   flex-grow: 1;
   height: auto;
-  overflow: scroll;
-  scroll-behavior: smooth;
 }
 
 .MainHeader {
   width: 300px;
   height: auto;
   flex-shrink: 0;
+}
+
+.Sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
 }
 
 .Card {
@@ -63,8 +66,11 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
 .NavBar a {
@@ -114,6 +120,10 @@
 
 .InlineImg {
   width: 200px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -178,5 +188,32 @@ button {
   .ColumnToRow {
     flex-flow: row nowrap;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ColumnToRow {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .SkillsList {
+    gap: 10px;
+  }
+
+  .ImageHeader {
+    width: 100%;
+  }
+
+  .RowToColumn {
+    flex-flow: row wrap;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .Sticky {
+    position: relative;
+    top: 0px;
   }
 }

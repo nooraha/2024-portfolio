@@ -20,7 +20,7 @@ function ProjectsList() {
     return b.id - a.id;
   });
   const listItems = newestProjectsFirst.map((project) => (
-    <li className="Card">
+    <li className="Card RowToColumn">
       <header className="ImageHeader">
         <img src={placeholderimg}></img>
       </header>

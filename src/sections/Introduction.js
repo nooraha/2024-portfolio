@@ -6,23 +6,20 @@ export default function Introduction() {
     <div className="Sticky">
       <Section>
         <div className="ColumnToRow">
-          <div className="ColumnToRow">
+          <div className="Card ColumnToRow">
             <img className="InlineImg" src={self_portrait}></img>
             <div>
-              <div>
+              <div className="MainTitle">
                 <p>Hello, I'm</p>
                 <h1>Noora Halla-aho</h1>
                 <p>junior software developer & artist</p>
               </div>
               <div>
-                <p></p>
                 <DownloadCVButton />
               </div>
             </div>
           </div>
-          <div>
-            <ContactInfo />
-          </div>
+          <ContactInfo />
         </div>
       </Section>
     </div>
@@ -30,19 +27,27 @@ export default function Introduction() {
 }
 
 function DownloadCVButton() {
-  return <button className="Download-CV-Button">Download my CV</button>;
+  return (
+    <button className="Download-CV-Button">
+      <a href={self_portrait} download="cv_placeholder.jpg">
+        Download my CV
+      </a>
+    </button>
+  );
 }
 
 function ContactInfo() {
   return (
-    <div className="ContactInfoBox">
-      <h2>contact me</h2>
-      <ul>
-        <li>phone:</li>
-        <li>email:</li>
-        <li>GitHub:</li>
-        <li>LinkedIn:</li>
-      </ul>
+    <div className="Card MaxWidth">
+      <div className="ContactInfoBox">
+        <h2>Get in touch</h2>
+        <ul>
+          <li>phone:</li>
+          <li>email:</li>
+          <li>GitHub:</li>
+          <li>LinkedIn:</li>
+        </ul>
+      </div>
     </div>
   );
 }

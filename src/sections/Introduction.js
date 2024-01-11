@@ -12,7 +12,7 @@ export default function Introduction() {
               <div className="MainTitle">
                 <p>Hello, I'm</p>
                 <h1>Noora Halla-aho</h1>
-                <p>junior software developer & artist</p>
+                <p>a junior software developer & artist</p>
               </div>
               <div>
                 <DownloadCVButton />
@@ -28,11 +28,11 @@ export default function Introduction() {
 
 function DownloadCVButton() {
   return (
-    <button className="Download-CV-Button">
+    <div className="Download-CV-Button">
       <a href={self_portrait} download="cv_placeholder.jpg">
         Download my CV
       </a>
-    </button>
+    </div>
   );
 }
 
@@ -40,12 +40,24 @@ function ContactInfo() {
   return (
     <div className="Card MaxWidth">
       <div className="ContactInfoBox">
-        <h2>Get in touch</h2>
+        <h2>get in touch</h2>
         <ul>
-          <li>phone:</li>
-          <li>email:</li>
-          <li>GitHub:</li>
-          <li>LinkedIn:</li>
+          <li>
+            <a href="tel:+358 44 22 30308">+358 44 22 30308</a>
+          </li>
+          <li>
+            <a href="mailto:noora.halla.aho@gmail.com">
+              noora.halla.aho@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nooraha">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/noora-halla-aho-2a4418235/">
+              LinkedIn
+            </a>
+          </li>
         </ul>
       </div>
     </div>

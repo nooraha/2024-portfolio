@@ -13,19 +13,30 @@
 :root {
   --text_color: white;
   --link_color: #edfa90;
+  --link_hovercolor: #ab7ed8;
   --heading_color: white;
-  --backgroundcolor1: #3b5441;
-  --pagecolor: rgba(255, 255, 255, 0.1);
-  --pagebordercolor: rgba(255, 255, 255, 0.3);
-  --cardcolor: rgba(0, 0, 0, 0.2);
-  --navbarcolor1: rgba(0, 0, 0, 0.7);
-  --navbarcolor2: black;
+  --pagecolor: transparent;
+  --pagebordercolor: rgba(255, 255, 255, 0.4);
+  --cardcolor: rgba(255, 255, 255, 0.1);
+  --navbarcolor1: rgba(255, 255, 255, 0.1);
+  --navbarcolor2: transparent;
   --accentcolor: #edfa90;
   --accenttextcolor: black;
 }
 
 .App {
-  background-image: linear-gradient(to right, black, var(--backgroundcolor1));
+  background: rgb(54, 74, 186);
+  background: linear-gradient(
+    322deg,
+    rgba(43, 59, 152, 1) 5%,
+    rgba(15, 21, 56, 1) 12%,
+    rgba(0, 0, 0, 1) 33%,
+    rgb(17, 24, 65) 54%,
+    rgba(0, 0, 0, 1) 79%,
+    rgb(43, 59, 152) 93%,
+    rgb(128, 67, 168) 97%,
+    rgb(158, 124, 184) 100%
+  );
   height: auto;
   width: auto;
   padding-top: 30px;
@@ -42,7 +53,8 @@
   display: flex;
   flex-flow: row nowrap;
   gap: 30px;
-  background-color: var(--pagecolor);
+
+  background: linear-gradient(to left, transparent 5%, var(--pagecolor) 90%);
 
   border: 1px solid var(--pagebordercolor);
   border-radius: 15px;
@@ -67,6 +79,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
+  padding-top: -30px;
 }
 
 .ContactInfoBox {
@@ -103,32 +116,66 @@
 }
 
 .NavBar {
-  background-image: linear-gradient(
-    to top,
-    var(--navbarcolor1),
-    var(--navbarcolor2)
-  );
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  height: 40px;
+  width: 900px;
+  height: auto;
+  gap: 10px;
   position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   top: 0px;
   z-index: 1;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.NavBarItems {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
 
 .NavBar a {
   float: left;
   color: var(--text_color);
   display: block;
+  height: 45px;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
+  border: 1px solid var(--pagebordercolor);
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blue(1px);
 }
 
-.NavBarButton {
-  align-self: flex-start;
+.NavBar a:hover {
+  color: var(--text_color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.CloseNavBarButton {
+  padding: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 45px;
+  text-align: center;
+  color: var(--text_color);
+  border: 1px solid var(--pagebordercolor);
+  border-radius: 30px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blue(1px);
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.CloseNavBarButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .SkillsList {
@@ -221,7 +268,7 @@ li {
   font-family: OpenSans;
   color: var(--text_color);
   line-height: 1.7;
-  font-size: 13px;
+  font-size: 15px;
   word-spacing: 0.5px;
   letter-spacing: 0.2px;
   padding: 0;
@@ -262,6 +309,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--link_hovercolor);
+}
+
 button a {
   color: var(--accenttextcolor);
 }
@@ -274,6 +325,11 @@ button a {
   .PageHolder {
     flex-flow: column nowrap;
     gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .NavBar {
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -294,7 +350,7 @@ button a {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .ColumnToRow {
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -314,17 +370,39 @@ button a {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  .NavBar {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .NavBarItems {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
 @media only screen and (max-height: 800px) {
   .Sticky {
     position: relative;
     top: 0px;
   }
 
-  .NavBar {
-    height: 60px;
+  .PageHolder {
+    margin-top: 80px;
   }
 
-  .PageHolder {
-    margin-top: 60px;
+  .NavBar {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .NavBarItems {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

@@ -5,7 +5,6 @@ export const projects = [
     link: "https://github.com/nooraha/talvimetsa-platformer",
     date: "fall 2022",
     description: "simple 2d platformer",
-    imglink: "",
     skills: ["C#", "Unity 2D", "Git", "Photoshop"],
   },
   {
@@ -14,7 +13,6 @@ export const projects = [
     link: "https://github.com/kosmilo/Exodus-Escape-from-the-lab",
     date: "spring 2023",
     description: "3d horror puzzle game",
-    imglink: "",
     skills: ["C#", "Blender", "Unity 3D", "Git", "Photoshop"],
   },
   {
@@ -23,7 +21,14 @@ export const projects = [
     link: "https://github.com/kosmilo/pygame-shooter",
     date: "fall 2023",
     description: "A retro arcade game-style shooter built with pygame.",
-    imglink: "",
     skills: ["Python", "Git", "MySQL", "pygame", "mediapipe", "cv2"],
+  },
+  {
+    id: 3,
+    title: "Portfolio for 2024",
+    link: "https://github.com/nooraha/2024-portfolio",
+    date: "spring 2024",
+    description: "portfolio",
+    skills: ["React", "HTML", "CSS", "Git", "JavaScript"],
   },
 ];

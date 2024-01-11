@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Introduction from "./sections/Introduction.js";
 import AboutMeSection from "./sections/AboutMeSection.js";
@@ -25,12 +26,24 @@ function App() {
 }
 
 function NavBar() {
+  const [isVisible, setVisibility] = useState(false);
+
+  function handleSetVisibility() {
+    setVisibility(!isVisible);
+  }
   return (
     <div className="NavBar">
-      <a href="#aboutme">about me</a>
-      <a href="#workexperience">work experience</a>
-      <a href="#education">education</a>
-      <a href="#projects">projects</a>
+      <button className="CloseNavBarButton" onClick={handleSetVisibility}>
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      {isVisible && (
+        <div className="NavBarItems">
+          <a href="#aboutme">about me</a>
+          <a href="#workexperience">work experience</a>
+          <a href="#education">education</a>
+          <a href="#projects">projects</a>
+        </div>
+      )}
     </div>
   );
 }

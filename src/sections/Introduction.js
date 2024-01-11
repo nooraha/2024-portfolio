@@ -7,7 +7,11 @@ export default function Introduction() {
       <Section>
         <div className="ColumnToRow">
           <div className="Card ColumnToRow">
-            <img className="InlineImg" src={self_portrait}></img>
+            <img
+              className="InlineImg"
+              src={self_portrait}
+              alt="digital painting of Noora Halla-aho"
+            ></img>
             <div>
               <div className="MainTitle">
                 <p>Hello, I'm</p>

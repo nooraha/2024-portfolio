@@ -1,6 +1,9 @@
-import { Section, SkillsList } from "../CommonComponents.js";
+import {
+  Section,
+  SkillsList,
+  CollapsibleDescription,
+} from "../CommonComponents.js";
 import { projects } from "../data/projectsData.js";
-import testimg from "../images/test_img.jpg";
 import dagon_gameplay from "../images/dagon_gameplay.png";
 import portfolio_image from "../images/portfolio_image.png";
 import exodus_gameplay from "../images/exodus_gameplay.png";
@@ -45,7 +48,7 @@ function ProjectsList() {
           </div>
           <div>{project.date}</div>
         </h3>
-        <p>{project.description}</p>
+        <CollapsibleDescription fullDesc={project.description} />
         <SkillsList skills={project.skills} />
       </div>
     </li>

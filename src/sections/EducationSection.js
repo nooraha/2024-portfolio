@@ -1,5 +1,5 @@
 import { education } from "../data/educationData.js";
-import { Section } from "../CommonComponents.js";
+import { Section, CollapsibleDescription } from "../CommonComponents.js";
 
 export default function EducationSection() {
   return (
@@ -22,7 +22,7 @@ function EducationHistoryList() {
     <li className="Card">
       <div>
         <h3>{edu.title}</h3>
-        <p>{edu.description}</p>
+        <CollapsibleDescription fullDesc={edu.description} />
       </div>
       <header>{edu.date}</header>
     </li>

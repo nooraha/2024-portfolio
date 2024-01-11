@@ -1,4 +1,8 @@
-import { Section, SkillsList } from "../CommonComponents.js";
+import {
+  Section,
+  SkillsList,
+  CollapsibleDescription,
+} from "../CommonComponents.js";
 import { workExperience } from "../data/workexperienceData.js";
 
 export default function WorkExperienceSection() {
@@ -26,7 +30,7 @@ function WorkExperienceList() {
           <div>{work.title}</div>
           <div>{work.type}</div>
         </h3>
-        <p>{work.description}</p>
+        <CollapsibleDescription fullDesc={work.description} />
         <SkillsList skills={work.skills} />
       </div>
     </li>

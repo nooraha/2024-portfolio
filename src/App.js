@@ -26,7 +26,7 @@ function App() {
 }
 
 function NavBar() {
-  const [isVisible, setVisibility] = useState(false);
+  const [isVisible, setVisibility] = useState(true);
 
   function handleSetVisibility() {
     setVisibility(!isVisible);

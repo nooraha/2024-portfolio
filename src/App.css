@@ -147,7 +147,7 @@
   display: block;
   height: 45px;
   text-align: center;
-  padding: 12px;
+  padding: 9px 12px 9px 12px;
   border: 1px solid var(--pagebordercolor);
   border-radius: 30px;
   -webkit-backdrop-filter: blur(1px);
@@ -215,6 +215,19 @@
   width: 100%;
 }
 
+.ShowMoreButton {
+  border: none;
+  background-color: inherit;
+  color: var(--link_color);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ShowMoreButton:hover {
+  color: var(--link_hovercolor);
+}
+
 .InlineImg {
   width: 200px;
   align-self: center;
@@ -252,6 +265,11 @@ h1 {
   padding-bottom: 0px;
   font-size: 45px;
   font-family: Ubuntu;
+}
+
+h3 a {
+  font-family: Ubuntu;
+  font-size: 18px;
 }
 
 h2 {
@@ -299,6 +317,11 @@ header {
 button {
   border: 1px solid transparent;
   border-radius: 30px;
+  font-family: OpenSans;
+  line-height: 1.7;
+  font-size: 15px;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
   background-color: var(--accentcolor);
   padding: 10px 20px 10px 20px;
   font-size: 100%;
@@ -307,6 +330,11 @@ button {
 a {
   color: var(--link_color);
   text-decoration: none;
+  font-family: OpenSans;
+  line-height: 1.7;
+  font-size: 15px;
+  word-spacing: 0.5px;
+  letter-spacing: 0.2px;
 }
 
 a:hover {

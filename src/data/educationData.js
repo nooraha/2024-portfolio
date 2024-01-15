@@ -31,4 +31,12 @@ export const education = [
     description:
       "I'm in the process of completing vocational qualifications in ICT, specifically software development. Our vocational studies cover a wide range of topics including programming in C#, Python and web languages, cyber security, data protection, AI, game development and Agile methodologies. On top of my vocational degree, I'm also completing upper secondary school studies and matriculation examinations.",
   },
+  {
+    id: 4,
+    title: "Elements of AI and Building AI",
+    type: "University of Helsinki online courses",
+    date: "spring 2023",
+    description:
+      "During my studies at OSAO, I've completed the Elements of AI and Building AI University of Helsinki online courses. The Elements of AI course gave me a good understanding of what AI really is and the many ways it can be used, while Building AI equipped me with the skills necessary to try programming AI applications myself. I completed the exercises on Advanced difficulty, meaning I had to write most of the code myself. While I'm still definitely no expert, I now have a good working foundation and understanding of concepts like the Bayes Rule, linear and logistic regression, the nearest neighbor method as well as neural networks.",
+  },
 ];

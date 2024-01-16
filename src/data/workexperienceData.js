@@ -5,8 +5,8 @@ export const workExperience = [
     date: "13.12.2021-17.12.2021",
     type: "work practise program",
     description:
-      "QA work; Used ArchiCad, Adobe InDesign and Slack; Also miscellaneous work such as modelling buildings.",
-    skills: ["ArchiCad", "Adobe Indesign", "Slack"],
+      "I spent my 9th grade work practise program in Helsinki. My work at Lundén was very diverse in nature: I got to try out quality assurance work, familiarized myself with different kinds of software commonly used in the field, such as Slack, ArchiCad and Adobe InDesign, and interviewed the other employees about their work. It was a very valuable experience that taught me a lot about workplace culture.",
+    skills: ["ArchiCad", "Adobe InDesign", "Slack"],
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ export const workExperience = [
     date: "3.6.2022-17.6.2022",
     type: "summer internship",
     description:
-      "Designed STEAM lesson plans; maintained and assessed function of Lego EV3 robots; composed transcripts of educational material in English.",
+      "I worked at the faculty of educational sciences 6 hours a day for a total of ten days. My work there consisted of designing lesson plans incorporating STEAM subjects for use in primary schools, testing LEGO Ev3 robots and making transcriptions of educational material in English.",
     skills: [],
   },
   {

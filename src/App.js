@@ -5,6 +5,7 @@ import AboutMeSection from "./sections/AboutMeSection.js";
 import WorkExperienceSection from "./sections/WorkExperienceSection.js";
 import EducationSection from "./sections/EducationSection.js";
 import ProjectsSection from "./sections/ProjectsSection.js";
+import ArtSection from "./sections/ArtSection.js";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <WorkExperienceSection />
           <EducationSection />
           <ProjectsSection />
+          <ArtSection />
         </div>
       </div>
     </div>
@@ -42,6 +44,7 @@ function NavBar() {
           <a href="#workexperience">work experience</a>
           <a href="#education">education</a>
           <a href="#projects">projects</a>
+          <a href="#art">art</a>
         </div>
       )}
     </div>

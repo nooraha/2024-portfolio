@@ -5,7 +5,7 @@ export const projects = [
     link: "https://github.com/nooraha/talvimetsa-platformer",
     date: "fall 2022",
     description:
-      "Talvimetsä is a 2D platformer game that I designed and developed myself. I also made all the assets from scratch, from the tilemaps to the sprite animations and UI design. The game was developed with Unity using C# and took me around 2 months to complete. I wanted to keep the premise and mechanics of the game rather simple, as it was my first time using Unity for game development and I was still getting used to the features. On top of normal the typical W-D-space movement and jumping, I also implemented a gravity reversal mechanic that the game’s level design is centred around. There’s a lives system, cooldown timer, checkpoints and collectable items scattered around the map as well. The game is set in a night-time forest at winter that eventually opens into an icy cavern. The player character is an apprentice shaman of sorts who’s left their village to uncover the ancient secrets forest. Along the way, they find magical notes that guide them towards solving the mystery.",
+      "Talvimetsä is a 2D platformer game that I designed and developed myself. I also made all the assets from scratch, from the tilemaps to the sprite animations and UI design. The game was developed with Unity using C# and took me around 2 months to complete. I wanted to keep the premise and mechanics of the game rather simple, as it was my first time using Unity for game development and I was still getting used to the features. On top of normal the typical W-D-space movement and jumping, I also implemented a gravity reversal mechanic that the game’s level design is centred around. There’s a lives system, cooldown timer, checkpoints and collectable items scattered around the map as well. The game is set in a night-time forest at winter that eventually opens into an icy cavern.",
     skills: ["C#", "Unity 2D", "Git", "Photoshop"],
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     link: "https://github.com/kosmilo/Exodus-Escape-from-the-lab",
     date: "spring 2023",
     description:
-      "Exodus is a 3D survival-puzzle-horror game developed by me and my classmate Milo Koskela. We both worked on programming the mechanics and logic, but I was mainly in charge of the UI, puzzle design and 3D modelling while Milo focused more on the sound design, enemy AI, and texturing. The game was developed with Unity using C# and took around 3 months to complete.",
+      "Exodus is a 3D survival-puzzle-horror game developed by me and my classmate Milo Koskela. We both worked on programming the mechanics and logic, but I was mainly in charge of the UI, puzzle design and 3D modelling while Milo focused more on the sound design, enemy AI and animation. The game was developed with Unity using C# and took around 3 months to complete.",
     skills: ["C#", "Blender", "Unity 3D", "Git", "Photoshop"],
   },
   {
@@ -33,6 +33,6 @@ export const projects = [
     date: "spring 2024",
     description:
       "For 2024, I decided to build an updated version of my portfolio from Scratch using React. My main focus for this project was on responsiveness, and my goal was to make the page look good on devices of all shapes and sizes, while still managing to display my skills and giving me a place to showcase my interest in web design. I started using Git for version management from the get-go and created the base for the application using create-react-app. Learning React was a fun challenge, but it definitely improved my understanding of page structure and flow. Building the portfolio itself took about 3 weeks.",
-    skills: ["React", "HTML", "CSS", "Git", "JavaScript"],
+    skills: ["React", "HTML", "CSS", "Git", "JavaScript", "Adobe XD"],
   },
 ];

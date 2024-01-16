@@ -9,7 +9,7 @@ export default function WorkExperienceSection() {
   return (
     <div>
       <h2 id="workexperience" className="SectionTitle">
-        02. where I've worked
+        02. my work experience
       </h2>
       <Section>
         <WorkExperienceList />

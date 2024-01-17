@@ -288,8 +288,37 @@
   align-items: center;
 }
 
-.GalleryColumn li:hover .ImageOverlay {
+.ScreenOverlay {
+  position: fixed;
+  width: 50%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5% auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  transform: scale(0);
+  overflow: hidden;
+  transition: all 0.2s 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ScreenOverlay img {
+  max-height: 100%;
+  min-height: 75%;
   max-width: 100%;
+  width: auto;
+  height: 100%;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.GalleryColumn li:hover .ScreenOverlay {
+  transform: scale(1);
 }
 
 html {

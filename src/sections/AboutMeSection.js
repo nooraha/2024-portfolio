@@ -32,8 +32,11 @@ export default function AboutMeSection() {
         </div>
 
         <div className="Card Column">
-          <img src={monnit}></img>
-          <p>Here's also a picture of my catfish being cute for good measure</p>
+          <img
+            src={monnit}
+            alt="two bristlenose plecos doing a cute pose"
+          ></img>
+          <p>Here's also a picture of my plecos being cute for good measure</p>
         </div>
       </Section>
     </div>

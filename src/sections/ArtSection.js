@@ -8,7 +8,8 @@ import december_2023 from "../images/art/december_2023.png";
 import march_2023 from "../images/art/march_2023.png";
 import november_2023 from "../images/art/november_2023.png";
 import worm_attack from "../images/art/worm_attack.gif";
-import worm_walk from "../images/art/worm_walk.gif";
+import old_self_portrait from "../images/art/selfportraitart.png";
+import may_2022 from "../images/art/may_2022.jpg";
 
 export default function ArtSection() {
   return (
@@ -79,7 +80,13 @@ function ArtGallery() {
       img: august_2023,
       alt: "drawing of a person with brown and blonde hair and wearing a cyan flannel",
     },
-
+    {
+      id: 8,
+      date: "December 2022",
+      medium: "digital art",
+      img: old_self_portrait,
+      alt: "digital self-portrait of Noora Halla-aho",
+    },
     {
       id: 9,
       date: "April 2023",
@@ -87,32 +94,20 @@ function ArtGallery() {
       img: april_2023,
       alt: "painting of a lake on a winter day",
     },
+    {
+      id: 11,
+      date: "May 2022",
+      medium: "digital art",
+      img: may_2022,
+      alt: "drawing of a girl laying on a bed in a messy room",
+    },
   ];
 
-  const evenImages = galleryImages.filter((image) => image.id % 2 == 0);
-  const oddImages = galleryImages.filter((image) => image.id % 2 == 1);
+  const evenImages = galleryImages.filter((image) => image.id % 2 === 0);
+  const oddImages = galleryImages.filter((image) => image.id % 2 === 1);
 
-  const evenItems = evenImages.map((piece) => (
-    <li>
-      <img src={piece.img} alt={piece.alt}></img>
-      <div>
-        <p>
-          {piece.date}, {piece.medium}
-        </p>
-      </div>
-    </li>
-  ));
-
-  const oddItems = oddImages.map((piece) => (
-    <li>
-      <img src={piece.img} alt={piece.alt}></img>
-      <div>
-        <p>
-          {piece.date}, {piece.medium}
-        </p>
-      </div>
-    </li>
-  ));
+  const evenItems = evenImages.map((piece) => <Piece piece={piece} />);
+  const oddItems = oddImages.map((piece) => <Piece piece={piece} />);
 
   return (
     <div>
@@ -121,5 +116,21 @@ function ArtGallery() {
         <ul className="GalleryColumn">{oddItems}</ul>
       </div>
     </div>
+  );
+}
+
+function Piece({ piece }) {
+  return (
+    <li>
+      <img src={piece.img} alt={piece.alt}></img>
+      <div>
+        <p>
+          {piece.date}, {piece.medium}
+        </p>
+        <div className="ScreenOverlay">
+          <img src={piece.img} alt={piece.alt}></img>
+        </div>
+      </div>
+    </li>
   );
 }

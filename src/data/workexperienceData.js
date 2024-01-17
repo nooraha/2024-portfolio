@@ -23,7 +23,7 @@ export const workExperience = [
     date: "1.6.2023-31.8.2023",
     type: "summer internship",
     description:
-      "Worked as part of CPRI (Common Public Radio Interface) team; Unit testing and code clean up using Python and C++; Used Git, Remote-SSH, Jira, Gerrit, CppUTest, Pytest.",
+      "At Nokia, I worked as part of a CPRI (Common Public Radio Interface) subteam for three months from the beginning of June to the end of August. I got hang of the work quickly and was already working on my first unit test within my first week there. I generally stuck to doing tickets related to unit testing and code clean-up, meaning my work was centred around things like designing test cases, refactoring old code, and building entire unit test files. I started out with just Python but learned C++ while working. I read a lot on common unit testing practises, test case design and the principles of clean code in general to make sure that my code was up to the team’s standards. I’d say I’m now very familiar with the test harnesses pytest and CppUTest, and unit testing concepts like stubs, mocks, and conditional, black and white box testing. I also had to level up my version control skills – I’d say I’m now rather adept with command-line Git and Gerrit. In addition to programming, I also learned a lot about what it’s like to work in an environment with Agile and Scrum methodologies. I communicated with my team members regularly both through Teams, as I mostly worked from home, and in person. I also used Jira to track work hours and completed tasks.",
     skills: [
       "C++",
       "Python",
@@ -33,6 +33,7 @@ export const workExperience = [
       "Jira",
       "Gerrit",
       "VS Code",
+      "Docker",
     ],
   },
   {
@@ -41,7 +42,7 @@ export const workExperience = [
     date: "27.10.2023-10.11.2023",
     type: "on-the-job learning",
     description:
-      "Updated the isoilo.fi website according to customer requirements while also taking into account performance, search engine optimization and design; Integrated content management system for future ease of use; Created documentation; Used Wix as well as Javascript through Velo.",
+      "I worked for Iso Ilo for a period of two weeks as part of an on-the-job learning program to progress my studies and gain additional experience. I worked while simultaneously having to attend my upper secondary school classes and study, so managing my time efficiently was essential. At the beginning of my employment, I received a list of proposed changes and updates for the isoilo.fi website, including things like updating text, photos, and page layout, search engine optimization, as well as implementing additional functionality to existing elements. While working, I also wrote down suggestions I came up with myself, like implementing a content management system to make updating the website easier in the future. I also created documentation of how to update the site for the same purpose. The website is hosted on Wix, so that’s the platform I used to make changes, but I also had to learn and use JavaScript for some things as Wix simply didn’t have the necessary components. I haven’t done much web-related work in the past, so the project was a fun challenge for me, as I had to consider both aesthetics and design while keeping performance, ease of use and customer needs in mind. I mostly worked independently, but also communicated with Iso Ilo through regular meetings to update them on my progress.",
     skills: ["Wix", "JavaScript"],
   },
 ];

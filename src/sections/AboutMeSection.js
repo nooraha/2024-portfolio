@@ -23,11 +23,11 @@ export default function AboutMeSection() {
           <p>
             When I'm not coding, I enjoy playing the flute, swimming and doing
             various crafts - from crocheting to building swords. I have an
-            especially strong interest in drawing and all things visual. I have
-            a section showcasing some of my 2D and 3D work in case you're
-            interested. I have too many interests, I know, but: I also LOVE
-            physics and mathematics. I'm hoping to study physics once I graduate
-            from vocational school and incorporate it into my future career!
+            especially strong interest in drawing, design and 3D modeling. I
+            have a section showcasing some of my 2D and 3D work in case you're
+            interested. I also LOVE physics and mathematics. I'm hoping to study
+            physics once I graduate from vocational school and incorporate it
+            into my future career!
           </p>
         </div>
 

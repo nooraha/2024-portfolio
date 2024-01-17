@@ -21,7 +21,7 @@ export const education = [
     date: "fall 2013-present",
     type: "studies in music",
     description:
-      "I've been taking flute lessons at the Oulu Conservatory since age 6. My studies there have also included 5 years' worth of music theory, performing in concerts and participating in orchestra activity. In 2023, I also started playing the tenor saxophone as a side instrument. I've played the flute at many school events and have no problem with performing in front of an audience.",
+      "I've been taking flute lessons at the Oulu Conservatory since age 6. My studies there have also included 5 years' worth of music theory, performing in concerts and participating in orchestra activity. I completed the basic studies encompassing 800 hours of music education in spring of 2022 and started advanced studies the following fall. In 2023, I also started playing the tenor saxophone as a side instrument. I've played the flute at many school events and have no problem with performing in front of an audience.",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const education = [
     date: "fall 2022-present",
     type: "vocational school + upper secondary school studies",
     description:
-      "I'm in the process of completing vocational qualifications in ICT, specifically software and game development. Our vocational studies cover a wide range of topics including programming in C#, Python and web languages, cyber security, data protection, AI, game development and Agile methodologies. On top of my vocational degree, I'm also completing upper secondary school studies and matriculation examinations.",
+      "I'm in the process of completing vocational qualifications in ICT, specifically software and game development. Our vocational studies cover a wide range of topics including programming in C#, Python and web languages, cyber security, data protection, AI, game development and Agile methodologies. On top of my vocational degree, I'm also completing upper secondary school studies and matriculation examinations with a current GPA of 9,54.",
   },
   {
     id: 4,

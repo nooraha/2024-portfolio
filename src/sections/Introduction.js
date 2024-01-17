@@ -1,5 +1,5 @@
 import { Section } from "../CommonComponents.js";
-import self_portrait from "../images/old_cv_picture.png";
+import self_portrait from "../images/cropped_cv_picture.png";
 
 export default function Introduction() {
   return (
@@ -8,7 +8,7 @@ export default function Introduction() {
         <div className="ColumnToRow">
           <div className="Card ColumnToRow">
             <img
-              className="InlineImg"
+              className="IntroImage"
               src={self_portrait}
               alt="digital painting of Noora Halla-aho"
             ></img>

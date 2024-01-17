@@ -1,5 +1,6 @@
 import { Section } from "../CommonComponents.js";
 import self_portrait from "../images/cropped_cv_picture.png";
+import cv_2024 from "../CV.2024.5.pdf";
 
 export default function Introduction() {
   return (
@@ -33,7 +34,7 @@ export default function Introduction() {
 function DownloadCVButton() {
   return (
     <div className="Download-CV-Button">
-      <a href={self_portrait} download="cv_placeholder.jpg">
+      <a href={cv_2024} download="CV_Noora_Halla-aho">
         Download my CV
       </a>
     </div>

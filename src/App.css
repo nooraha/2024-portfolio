@@ -271,31 +271,10 @@
   height: auto;
 }
 
-.ImageOverlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--cardcolor);
-  top: 0;
-  left: 0;
-  max-width: 0;
-  overflow: hidden;
-  transition: all 0.2s 0.1s ease-in-out;
-  color: var(--text_color);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-  border-radius: 15px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .ScreenOverlay {
   position: fixed;
-  max-width: 50%;
-  max-height: 85%;
-  height: auto;
-  width: auto;
+  height: 80%;
+  width: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 75px auto;
   right: 0;
@@ -312,14 +291,13 @@
 }
 
 .ScreenOverlay img {
-  max-height: 100%;
-  min-height: 75%;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: block;
   object-fit: contain;
+  max-height: 100%;
+  min-height: 70%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin: auto;
 }
 
 .GalleryColumn li:hover .ScreenOverlay {
@@ -483,6 +461,10 @@ button a {
 
   .MaxWidth {
     width: 100%;
+  }
+
+  .ScreenOverlay {
+    width: 70%;
   }
 }
 

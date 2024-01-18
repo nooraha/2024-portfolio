@@ -271,6 +271,14 @@
   height: auto;
 }
 
+.GalleryColumn li iframe {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
 .ScreenOverlay {
   position: fixed;
   height: 80%;
@@ -493,6 +501,10 @@ button a {
     height: 0;
     width: 0;
     display: none;
+  }
+
+  .GalleryColumn li iframe {
+    height: 300px;
   }
 }
 

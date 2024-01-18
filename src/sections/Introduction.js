@@ -63,6 +63,9 @@ function ContactInfo() {
               LinkedIn
             </a>
           </li>
+          <li>
+            <a href="https://sketchfab.com/nooraha">Sketchfab</a>
+          </li>
         </ul>
       </div>
     </div>

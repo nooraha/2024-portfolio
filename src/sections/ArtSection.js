@@ -12,6 +12,8 @@ import old_self_portrait from "../images/art/selfportraitart.png";
 import may_2022 from "../images/art/may_2022.jpg";
 import self_portrait_2024 from "../images/art/self_portrait_2024.png";
 
+import { models } from "../data/modelEmbedData.js";
+
 export default function ArtSection() {
   return (
     <div>
@@ -124,11 +126,27 @@ function ArtGallery() {
   const evenItems = evenImages.map((piece) => <Piece piece={piece} />);
   const oddItems = oddImages.map((piece) => <Piece piece={piece} />);
 
+  const evenModels = models.filter((model) => model.id % 2 === 0);
+  const oddModels = models.filter((model) => model.id % 2 === 1);
+
+  const evenModelItems = evenModels.map((model) => (
+    <ModelShowcase model={model} />
+  ));
+  const oddModelItems = oddModels.map((model) => (
+    <ModelShowcase model={model} />
+  ));
+
   return (
     <div>
       <div className="ArtGallery">
-        <ul className="GalleryColumn">{evenItems}</ul>
-        <ul className="GalleryColumn">{oddItems}</ul>
+        <ul className="GalleryColumn">
+          {evenItems}
+          {evenModelItems}
+        </ul>
+        <ul className="GalleryColumn">
+          {oddItems}
+          {oddModelItems}
+        </ul>
       </div>
     </div>
   );
@@ -145,6 +163,19 @@ function Piece({ piece }) {
         <div className="ScreenOverlay">
           <img src={piece.img} alt={piece.alt}></img>
         </div>
+      </div>
+    </li>
+  );
+}
+
+function ModelShowcase({ model }) {
+  return (
+    <li>
+      {model.embed}
+      <div>
+        <p>
+          {model.date}, {model.medium}
+        </p>
       </div>
     </li>
   );

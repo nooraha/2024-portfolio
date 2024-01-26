@@ -312,6 +312,16 @@
   transform: scale(1);
 }
 
+.FlexHeader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.NormalText {
+  font-weight: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }

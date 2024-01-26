@@ -14,7 +14,7 @@ export const projects = [
     link: "https://github.com/kosmilo/Exodus-Escape-from-the-lab",
     date: "spring 2023",
     description:
-      "Exodus is a 3D survival-puzzle-horror game developed by me and my classmate Milo Koskela. We both worked on programming the mechanics and logic, but I was mainly in charge of the UI, puzzle design and 3D modelling while Milo focused more on the sound design, enemy AI and animation. The game was developed with Unity using C# and took around 3 months to complete.",
+      "Exodus is a 3D survival-puzzle-horror game developed as a group project by me and my classmate Milo Koskela. We both did our part in programming the logic of the game, but I also worked on the UI, inventory mechanics, puzzle design and 3D modelling. The game was developed with Unity using C# and took around 3 months to complete.",
     skills: ["C#", "Blender", "Unity 3D", "Git", "Photoshop"],
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     link: "https://github.com/nooraha/2024-portfolio",
     date: "spring 2024",
     description:
-      "For 2024, I decided to build an updated version of my portfolio from Scratch using React. My main focus for this project was on responsiveness, and my goal was to make the page look good on devices of all shapes and sizes, while still managing to display my skills and giving me a place to showcase my interest in web design. I started using Git for version management from the get-go and created the base for the application using create-react-app. Learning React was a fun challenge, but it definitely improved my understanding of page structure and flow. Building the portfolio itself took about 3 weeks.",
+      "For 2024, I decided to build an updated version of my portfolio from scratch using React. My main focus for this project was on responsiveness, and my goal was to make the page look good on devices of all shapes and sizes, while still managing to display my skills and giving me a place to showcase my interest in web design. I started using Git for version management from the get-go and created the base for the application using create-react-app. Learning React was a fun challenge, but it definitely improved my understanding of page structure and flow. Building the portfolio itself took about 3 weeks.",
     skills: ["React", "HTML", "CSS", "Git", "JavaScript", "Adobe XD"],
   },
 ];

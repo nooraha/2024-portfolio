@@ -21,10 +21,12 @@ function EducationHistoryList() {
   const listItems = newestEduFirst.map((edu) => (
     <li className="Card">
       <div>
-        <h3>{edu.title}</h3>
+        <h3 className="FlexHeader">
+          <div>{edu.title}</div>
+          <p className="NormalText">{edu.date}</p>
+        </h3>
         <CollapsibleDescription fullDesc={edu.description} />
       </div>
-      <header>{edu.date}</header>
     </li>
   ));
   return <ul className="CardList">{listItems}</ul>;

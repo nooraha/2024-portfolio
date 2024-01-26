@@ -24,11 +24,13 @@ function WorkExperienceList() {
   });
   const listItems = newestWorkFirst.map((work) => (
     <li className="Card">
-      <header>{work.date}</header>
       <div>
-        <h3>
-          <div>{work.title}</div>
-          <div>{work.type}</div>
+        <h3 className="FlexHeader">
+          <div>
+            <div>{work.title}</div>
+            <div>{work.type}</div>
+          </div>
+          <p className="NormalText">{work.date}</p>
         </h3>
         <CollapsibleDescription fullDesc={work.description} />
         <SkillsList skills={work.skills} />

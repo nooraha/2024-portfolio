@@ -15,7 +15,7 @@ export function SkillsList({ skills }) {
 
 export function CollapsibleDescription({ fullDesc }) {
   const [showFullDescription, setFullDescription] = useState(false);
-  const shouldShowFullDesc = fullDesc.length > 300;
+  const shouldShowFullDesc = fullDesc.length > 240;
 
   const showFullDescriptionHandler = () => {
     setFullDescription(!showFullDescription);
@@ -24,7 +24,7 @@ export function CollapsibleDescription({ fullDesc }) {
   const description = showFullDescription
     ? fullDesc
     : shouldShowFullDesc
-    ? fullDesc.slice(0, 300) + "..."
+    ? fullDesc.slice(0, 240) + "..."
     : fullDesc;
 
   return (

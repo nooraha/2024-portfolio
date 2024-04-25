@@ -12,15 +12,17 @@ function App() {
     <div className="App">
       <NavBar />
       <div className="PageHolder">
-        <div className="MainHeader">
-          <Introduction />
-        </div>
-        <div className="SectionHolder">
-          <AboutMeSection />
-          <WorkExperienceSection />
-          <EducationSection />
-          <ProjectsSection />
-          <ArtSection />
+        <div className="ContentHolder">
+          <div className="MainHeader">
+            <Introduction />
+          </div>
+          <div className="SectionHolder">
+            <AboutMeSection />
+            <WorkExperienceSection />
+            <EducationSection />
+            <ProjectsSection />
+            <ArtSection />
+          </div>
         </div>
       </div>
     </div>
@@ -33,13 +35,26 @@ function NavBar() {
   function handleSetVisibility() {
     setVisibility(!isVisible);
   }
+
+  function setVisible() {
+    setVisibility(true);
+  }
+
+  function setInvisible() {
+    setVisibility(false);
+  }
+
   return (
     <div className="NavBar">
-      <button className="CloseNavBarButton" onClick={handleSetVisibility}>
+      <button
+        className="CloseNavBarButton"
+        onClick={handleSetVisibility}
+        onMouseEnter={setVisible}
+      >
         <span class="material-symbols-outlined">menu</span>
       </button>
       {isVisible && (
-        <div className="NavBarItems">
+        <div className="NavBarItems" onMouseLeave={setInvisible}>
           <a href="#aboutme">about me</a>
           <a href="#workexperience">work experience</a>
           <a href="#education">education</a>

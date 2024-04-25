@@ -37,14 +37,16 @@ function ProjectsList() {
   const listItems = newestProjectsFirst.map((project) => (
     <li className="Card Column">
       <header className="ImageHeader">
-        <a href={project.link}>
+        <a href={project.link} target="_blank" title={project.link}>
           <img src={projectImages[project.id]} alt={project.title}></img>
         </a>
       </header>
       <div>
         <h3>
           <div>
-            <a href={project.link}>{project.title}</a>
+            <a href={project.link} target="_blank" title={project.link}>
+              {project.title}
+            </a>
           </div>
           <div>{project.date}</div>
         </h3>

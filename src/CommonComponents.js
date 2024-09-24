@@ -43,3 +43,18 @@ export function CollapsibleDescription({ fullDesc }) {
     </div>
   );
 }
+
+export function TimeLineListItem({ date, children }) {
+  return (
+    <div>
+      <div className="Row">
+        <div className="DecorativeDot"></div>
+        <h3>{date}</h3>
+      </div>
+      <div className="Row">
+        <div className="DecorativeLine"></div>
+        <div className="Card">{children}</div>
+      </div>
+    </div>
+  );
+}

@@ -2,6 +2,7 @@ import {
   Section,
   SkillsList,
   CollapsibleDescription,
+  TimeLineListItem,
 } from "../CommonComponents.js";
 import { workExperience } from "../data/workexperienceData.js";
 
@@ -23,18 +24,19 @@ function WorkExperienceList() {
     return b.id - a.id;
   });
   const listItems = newestWorkFirst.map((work) => (
-    <li className="Card">
-      <div>
-        <h3 className="FlexHeader">
-          <div>
-            <div>{work.title}</div>
-            <div>{work.type}</div>
-          </div>
-          <p className="NormalText">{work.date}</p>
-        </h3>
-        <CollapsibleDescription fullDesc={work.description} />
-        <SkillsList skills={work.skills} />
-      </div>
+    <li>
+      <TimeLineListItem date={work.date}>
+        <div>
+          <h3 className="FlexHeader">
+            <div>
+              <div>{work.title}</div>
+              <div>{work.type}</div>
+            </div>
+          </h3>
+          <CollapsibleDescription fullDesc={work.description} />
+          <SkillsList skills={work.skills} />
+        </div>
+      </TimeLineListItem>
     </li>
   ));
   return <ul className="CardList">{listItems}</ul>;

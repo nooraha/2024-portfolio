@@ -44,4 +44,13 @@ export const workExperience = [
       "I worked for Iso Ilo for a period of two weeks as part of an on-the-job learning program to progress my studies. Managing my time efficiently was essential as I also had to attend upper secondary school classes during my employment period. I received a list of proposed changes and updates for the isoilo.fi website, but also gave suggestions myself for things like implementing a content management system to make updating the website easier in the future. I mainly worked with the tools provided by Wix but also used some JavaScript. I worked independently, but also communicated with Iso Ilo through regular meetings to update them on my progress.",
     skills: ["Wix", "JavaScript"],
   },
+  {
+    id: 5,
+    title: "University of Helsinki",
+    date: "3.6.2024 - 19.7.2024",
+    type: "summer internship",
+    description:
+      "I worked in the Planetary science research group under the Faculty of Science particle physics and astrophysics division for seven weeks, as part of the Asteroid Imaging Simulator (AIS) project being worked on for the ESA Hera and Comet Interceptor missions. My responsibilities included adding new functionality, unit test creation and development, code refactoring, documentation and fixing bugs. I worked very independently, planning and scheduling my work at my own discretion, with weekly reports to my supervisor to update my progress. I also got to work with the NASA SPICE Kernels to determine the orientation and movement of target asteroids, which was very exciting!",
+    skills: ["Python", "Git", "Blender", "Sphinx", "pytest", "SPICE Kernels"],
+  },
 ];

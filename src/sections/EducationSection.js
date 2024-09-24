@@ -1,5 +1,9 @@
 import { education } from "../data/educationData.js";
-import { Section, CollapsibleDescription } from "../CommonComponents.js";
+import {
+  Section,
+  CollapsibleDescription,
+  TimeLineListItem,
+} from "../CommonComponents.js";
 
 export default function EducationSection() {
   return (
@@ -19,14 +23,15 @@ function EducationHistoryList() {
     return b.id - a.id;
   });
   const listItems = newestEduFirst.map((edu) => (
-    <li className="Card">
-      <div>
-        <h3 className="FlexHeader">
-          <div>{edu.title}</div>
-          <p className="NormalText">{edu.date}</p>
-        </h3>
-        <CollapsibleDescription fullDesc={edu.description} />
-      </div>
+    <li>
+      <TimeLineListItem date={edu.date}>
+        <div>
+          <h3 className="FlexHeader">
+            <div>{edu.title}</div>
+          </h3>
+          <CollapsibleDescription fullDesc={edu.description} />
+        </div>
+      </TimeLineListItem>
     </li>
   ));
   return <ul className="CardList">{listItems}</ul>;

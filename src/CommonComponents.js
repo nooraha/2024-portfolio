@@ -48,13 +48,29 @@ export function TimeLineListItem({ date, children }) {
   return (
     <div>
       <div className="Row">
-        <div className="DecorativeDot"></div>
         <h3>{date}</h3>
       </div>
       <div className="Row">
-        <div className="DecorativeLine"></div>
         <div className="Card">{children}</div>
       </div>
+    </div>
+  );
+}
+
+export function Timeline({ items, children }) {
+  const sortedItems = items.sort((a, b) => b.id - a.id);
+
+  return (
+    <div className="Timeline">
+      {sortedItems.map((item, index) => (
+        <div
+          key={item.id}
+          className={`TimelineItem ${item.id % 2 === 0 ? "Right" : "Left"}`}
+        >
+          <TimeLineListItem date={item.date}>{children(item)}</TimeLineListItem>
+          <div></div>
+        </div>
+      ))}
     </div>
   );
 }

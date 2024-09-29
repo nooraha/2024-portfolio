@@ -4,30 +4,28 @@ import cv_2024 from "../CV.2024.5.pdf";
 
 export default function Introduction() {
   return (
-    <div className="Sticky">
-      <Section>
-        <div className="ColumnToRow">
-          <div className="Card ColumnToRow">
-            <img
-              className="IntroImage"
-              src={self_portrait}
-              alt="digital painting of Noora Halla-aho"
-            ></img>
+    <Section>
+      <div className="ColumnToRow">
+        <div className="Card ColumnToRow">
+          <img
+            className="IntroImage"
+            src={self_portrait}
+            alt="digital painting of Noora Halla-aho"
+          ></img>
+          <div>
+            <div className="MainTitle">
+              <p>Hello, I'm</p>
+              <h1>Noora Halla-aho</h1>
+              <p>a junior software developer & artist</p>
+            </div>
             <div>
-              <div className="MainTitle">
-                <p>Hello, I'm</p>
-                <h1>Noora Halla-aho</h1>
-                <p>a junior software developer & artist</p>
-              </div>
-              <div>
-                <DownloadCVButton />
-              </div>
+              <DownloadCVButton />
             </div>
           </div>
-          <ContactInfo />
         </div>
-      </Section>
-    </div>
+        <ContactInfo />
+      </div>
+    </Section>
   );
 }
 

@@ -85,7 +85,7 @@
 }
 
 .MainHeader {
-  width: 300px;
+  width: 100%;
   height: auto;
   flex-shrink: 0;
 }
@@ -108,6 +108,73 @@
   padding: 25px;
 }
 
+.Timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 150px;
+}
+
+.TimelineItem {
+  position: relative;
+  width: 47.5%;
+  padding: 10px;
+  margin-bottom: -150px;
+}
+
+.TimelineItem.Left {
+  left: 0;
+}
+
+.TimelineItem.Right {
+  left: 53.5%;
+}
+
+.TimelineItem::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--text_color);
+}
+
+.TimelineItem.Right::before {
+  left: -9.5%;
+}
+
+.TimelineItem.Left::before {
+  right: -9.5%;
+}
+
+.TimelineContent {
+  position: relative;
+  background-color: var(--cardcolor);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+
+.Timeline::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border-radius: 15px;
+  background: linear-gradient(
+    180deg,
+    var(--cardcolor) 0%,
+    var(--cardcolor) 85%,
+    transparent 100%
+  );
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  margin-top: 58px;
+}
+
 .Column {
   display: flex;
   flex-flow: column nowrap;
@@ -119,25 +186,6 @@
   flex-flow: row nowrap;
   gap: 30px;
   margin-bottom: 10px;
-}
-
-.DecorativeLine {
-  border: 1px solid transparent;
-  background-color: var(--cardcolor);
-  border-radius: 15px;
-  padding: 5px;
-  width: 0px;
-  margin: 0px 10px 20px 10px;
-}
-
-.DecorativeDot {
-  border: 1px solid transparent;
-  background-color: var(--cardcolor);
-  border-radius: 15px;
-  padding: 10px;
-  height: 0px;
-  width: 0px;
-  margin: 5px 5px 0px 5px;
 }
 
 .Invisible {
@@ -153,7 +201,7 @@
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .NavBar {
@@ -395,11 +443,11 @@ h3 a {
 
 h2 {
   font-family: Ubuntu;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0px;
+  margin-bottom: 30px;
   color: var(--heading_color);
   padding: 0px;
-  padding-bottom: 10px;
 }
 
 p,
@@ -504,6 +552,31 @@ button a {
   .Sticky {
     position: relative;
     top: 0px;
+  }
+
+  .Timeline {
+    margin-bottom: 0px;
+  }
+
+  .TimelineItem {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: 25px;
+  }
+
+  .TimelineItem.Left,
+  .TimelineItem.Right {
+    left: 0;
+  }
+
+  .TimelineItem.Right::before,
+  .TimelineItem.Left::before {
+    left: -33.5px;
+  }
+
+  .Timeline::before {
+    left: 0;
+    margin-bottom: 150px;
   }
 }
 

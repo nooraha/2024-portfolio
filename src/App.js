@@ -12,17 +12,15 @@ function App() {
     <div className="App">
       <NavBar />
       <div className="PageHolder">
-        <div className="ContentHolder">
-          <div className="MainHeader">
-            <Introduction />
-          </div>
-          <div className="SectionHolder">
-            <AboutMeSection />
-            <WorkExperienceSection />
-            <EducationSection />
-            <ProjectsSection />
-            <ArtSection />
-          </div>
+        <div className="MainHeader">
+          <Introduction />
+        </div>
+        <div className="SectionHolder">
+          <AboutMeSection />
+          <WorkExperienceSection />
+          <EducationSection />
+          <ProjectsSection />
+          <ArtSection />
         </div>
       </div>
     </div>

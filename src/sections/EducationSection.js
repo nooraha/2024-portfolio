@@ -2,7 +2,7 @@ import { education } from "../data/educationData.js";
 import {
   Section,
   CollapsibleDescription,
-  TimeLineListItem,
+  Timeline,
 } from "../CommonComponents.js";
 
 export default function EducationSection() {
@@ -12,27 +12,17 @@ export default function EducationSection() {
         03. my education
       </h2>
       <Section>
-        <EducationHistoryList />
+        <Timeline items={education}>
+          {(item) => (
+            <div key={item.id}>
+              <h3 className="FlexHeader">
+                <div>{item.title}</div>
+              </h3>
+              <CollapsibleDescription fullDesc={item.description} />
+            </div>
+          )}
+        </Timeline>
       </Section>
     </div>
   );
-}
-
-function EducationHistoryList() {
-  const newestEduFirst = education.sort(function (a, b) {
-    return b.id - a.id;
-  });
-  const listItems = newestEduFirst.map((edu) => (
-    <li>
-      <TimeLineListItem date={edu.date}>
-        <div>
-          <h3 className="FlexHeader">
-            <div>{edu.title}</div>
-          </h3>
-          <CollapsibleDescription fullDesc={edu.description} />
-        </div>
-      </TimeLineListItem>
-    </li>
-  ));
-  return <ul className="CardList">{listItems}</ul>;
 }

@@ -8,15 +8,17 @@ import dagon_gameplay from "../images/dagon_gameplay.png";
 import portfolio_image from "../images/portfolio_image.png";
 import exodus_gameplay from "../images/exodus_gameplay.png";
 import talvimetsa_gameplay from "../images/talvimetsa_gameplay.png";
+import ProjectsGallery from "./ProjectsGallery.js";
 
 export default function ProjectsSection() {
   return (
     <div>
-      <h2 id="projects" className="SectionTitle">
-        04. some of my projects
-      </h2>
       <Section>
-        <ProjectsList />
+        <h2 id="projects" className="SectionTitle">
+          04. some of my projects
+        </h2>
+
+        <ProjectsGallery />
       </Section>
     </div>
   );

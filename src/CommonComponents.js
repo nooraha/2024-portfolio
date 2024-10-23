@@ -47,7 +47,7 @@ export function CollapsibleDescription({ fullDesc }) {
 export function TimeLineListItem({ date, children }) {
   return (
     <div>
-      <div className="Row">
+      <div className="Row TimeLineListItem">
         <h3>{date}</h3>
       </div>
       <div className="Row">

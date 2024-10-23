@@ -51,6 +51,6 @@ export const workExperience = [
     type: "summer internship",
     description:
       "As part of the Planetary Science research group in the Particle Physics and Astrophysics division, I worked on the Asteroid Imaging Simulator (AIS) project for ESA's Hera and Comet Interceptor missions. My responsibilities included adding new functionality, unit test creation and development, code refactoring, documentation and fixing bugs. I worked very independently, planning and scheduling my work at my own discretion, with weekly reports to my supervisor to update my progress. I also got to work with the NASA SPICE Kernels to determine the orientation and movement of target asteroids, which was very exciting!",
-    skills: ["Python", "Git", "Blender", "Sphinx", "pytest", "SPICE Kernels"],
+    skills: ["Python", "Git", "Blender", "Sphinx", "pytest", "SPICE"],
   },
 ];

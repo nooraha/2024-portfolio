@@ -1,40 +1,46 @@
 import { Section } from "../CommonComponents.js";
 import self_portrait from "../images/cropped_cv_picture.png";
 import cv_2024 from "../CV.2024.5.pdf";
+import "../Introduction.css";
 
 export default function Introduction() {
   return (
     <Section>
-      <div className="ColumnToRow">
-        <div className="Card ColumnToRow">
-          <img
-            className="IntroImage"
-            src={self_portrait}
-            alt="digital painting of Noora Halla-aho"
-          ></img>
-          <div>
-            <div className="MainTitle">
-              <p>Hello, I'm</p>
-              <h1>Noora Halla-aho</h1>
-              <p>a junior software developer & artist</p>
-            </div>
-            <div>
-              <DownloadCVButton />
-            </div>
-          </div>
-        </div>
-        <ContactInfo />
-      </div>
+      <HeroPage />
     </Section>
+  );
+}
+
+function HeroPage() {
+  return (
+    <div className="HeroCard">
+      <div className="HeroLeft">
+        <p>Hello! I'm</p>
+        <h1>Noora Halla-aho</h1>
+        <h2>Junior Software Developer & 2D/3D Artist</h2>
+      </div>
+      <div className="HeroRight">
+        <ContactMeButton />
+        <DownloadCVButton />
+      </div>
+    </div>
   );
 }
 
 function DownloadCVButton() {
   return (
-    <div className="Download-CV-Button">
+    <div className="Download-CV-Button HeroButton">
       <a href={cv_2024} download="CV_Noora_Halla-aho">
         Download my CV
       </a>
+    </div>
+  );
+}
+
+function ContactMeButton() {
+  return (
+    <div className="ContactMeButton HeroButton">
+      <a href="#contactme">Contact me</a>
     </div>
   );
 }

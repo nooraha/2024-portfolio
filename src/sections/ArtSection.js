@@ -16,12 +16,10 @@ import { models } from "../data/modelEmbedData.js";
 
 export default function ArtSection() {
   return (
-    <div>
+    <Section>
       <h2 id="art">05. and lastly, some art of mine!</h2>
-      <Section>
-        <ArtGallery />
-      </Section>
-    </div>
+      <ArtGallery />
+    </Section>
   );
 }
 

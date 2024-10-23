@@ -9,26 +9,22 @@ import { workExperience } from "../data/workexperienceData.js";
 
 export default function WorkExperienceSection() {
   return (
-    <div>
+    <Section>
       <h2 id="workexperience" className="SectionTitle">
         02. my work experience
       </h2>
-      <Section>
-        <Timeline items={workExperience}>
-          {(item) => (
-            <div key={item.id}>
-              <h3 className="FlexHeader">
-                <div>
-                  <div>{item.title}</div>
-                  <div>{item.type}</div>
-                </div>
-              </h3>
-              <CollapsibleDescription fullDesc={item.description} />
-              <SkillsList skills={item.skills} />
-            </div>
-          )}
-        </Timeline>
-      </Section>
-    </div>
+      <Timeline items={workExperience}>
+        {(item) => (
+          <div key={item.id}>
+            <h3 className="ItemHeader">
+              <div>{item.title}</div>
+              <div>{item.type}</div>
+            </h3>
+            <CollapsibleDescription fullDesc={item.description} />
+            <SkillsList skills={item.skills} />
+          </div>
+        )}
+      </Timeline>
+    </Section>
   );
 }

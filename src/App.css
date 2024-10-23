@@ -59,14 +59,11 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
-  padding: 25px;
   text-align: left;
 
   background: linear-gradient(to left, transparent 5%, var(--pagecolor) 90%);
-
-  border: 1px solid var(--pagebordercolor);
-  border-radius: 15px;
-
+  border-top: 1px solid var(--pagebordercolor);
+  border-bottom: 1px solid var(--pagebordercolor);
   transition: margin-top 0.5s;
 }
 
@@ -149,6 +146,14 @@
   right: -9.5%;
 }
 
+.TimelineItem .Card {
+  transition: background-color 0.3s;
+}
+
+.TimelineItem .Card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 .TimelineContent {
   position: relative;
   background-color: var(--cardcolor);
@@ -173,6 +178,14 @@
   left: 50%;
   margin-left: -1px;
   margin-top: 58px;
+}
+
+.ItemHeader {
+  margin-bottom: 10px;
+}
+
+.ItemHeader div {
+  margin-bottom: 5px;
 }
 
 .Column {
@@ -201,7 +214,14 @@
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+  border: 1px solid var(--pagebordercolor);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.Section h2 {
+  margin-top: 20px;
 }
 
 .NavBar {
@@ -219,7 +239,6 @@
   top: 0px;
   z-index: 1;
   padding-top: 12px;
-  padding-left: 12px;
 }
 
 .NavBarItems {
@@ -239,8 +258,10 @@
   padding: 9px 12px 9px 12px;
   border: 1px solid var(--pagebordercolor);
   border-radius: 30px;
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blue(1px);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
 .NavBar a:hover {
@@ -274,11 +295,11 @@
   padding-top: 15px;
 }
 .SkillsList li {
-  border: 1px solid transparent;
-  border-radius: 30px;
-  background-color: var(--accentcolor);
+  border: 1px solid var(--pagebordercolor);
+  border-radius: 10px;
+  background-color: transparent;
   padding: 10px 20px 10px 20px;
-  color: var(--accenttextcolor);
+  color: var(--text_color);
 }
 
 .CardList {
@@ -451,7 +472,8 @@ h2 {
 }
 
 p,
-li {
+li,
+label {
   font-family: OpenSans;
   color: var(--text_color);
   line-height: 1.7;
@@ -609,6 +631,7 @@ button a {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    width: fit-content;
   }
 
   .NavBarItems {

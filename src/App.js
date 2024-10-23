@@ -6,6 +6,7 @@ import WorkExperienceSection from "./sections/WorkExperienceSection.js";
 import EducationSection from "./sections/EducationSection.js";
 import ProjectsSection from "./sections/ProjectsSection.js";
 import ArtSection from "./sections/ArtSection.js";
+import ContactMeSection from "./sections/ContactMeSection.js";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <WorkExperienceSection />
           <EducationSection />
           <ProjectsSection />
-          <ArtSection />
+          <ContactMeSection />
         </div>
       </div>
     </div>
@@ -52,7 +53,7 @@ function NavBar() {
         <span class="material-symbols-outlined">menu</span>
       </button>
       {isVisible && (
-        <div className="NavBarItems" onMouseLeave={setInvisible}>
+        <div className="NavBarItems">
           <a href="#aboutme">about me</a>
           <a href="#workexperience">work experience</a>
           <a href="#education">education</a>

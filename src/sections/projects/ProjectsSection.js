@@ -6,8 +6,6 @@ import {
 } from "../../CommonComponents.js";
 import "./ProjectsGallery.css";
 import { projects } from "../../data/projectsData.js";
-import talvimetsa_gameplay from "../../images/talvimetsa_gameplay.png";
-import dagon_gameplay from "../../images/dagon_gameplay.png";
 
 export default function ProjectsSection() {
   return (
@@ -87,7 +85,7 @@ function ProjectsGallery() {
             onClick={() => handleProjectClick(project)}
           >
             <header className="ImageHeader">
-              <img src={talvimetsa_gameplay} alt={project.title}></img>
+              <img src={project.headerImage} alt={project.title}></img>
             </header>
             <div>
               <h3>
@@ -112,7 +110,7 @@ function ProjectsGallery() {
             <h3>{selectedProject.date}</h3>
 
             <ImageSlideshow
-              images={[dagon_gameplay, talvimetsa_gameplay]}
+              images={selectedProject.images}
               project_title={selectedProject.title}
             ></ImageSlideshow>
             <p>

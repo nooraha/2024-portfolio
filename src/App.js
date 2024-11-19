@@ -4,7 +4,7 @@ import Introduction from "./sections/Introduction.js";
 import AboutMeSection from "./sections/AboutMeSection.js";
 import WorkExperienceSection from "./sections/WorkExperienceSection.js";
 import EducationSection from "./sections/EducationSection.js";
-import ProjectsSection from "./sections/ProjectsSection.js";
+import ProjectsSection from "./sections/projects/ProjectsSection.js";
 import ArtSection from "./sections/ArtSection.js";
 
 function App() {

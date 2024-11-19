@@ -262,6 +262,7 @@
   backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .NavBar a:hover {
@@ -526,6 +527,7 @@ a {
   font-size: 15px;
   word-spacing: 0.5px;
   letter-spacing: 0.2px;
+  cursor: alias;
 }
 
 a:hover {

@@ -3,13 +3,27 @@ import {
   Section,
   SkillsList,
   CollapsibleDescription,
-} from "../CommonComponents.js";
-import "../ProjectsGallery.css";
-import { projects } from "../data/projectsData.js";
-import talvimetsa_gameplay from "../images/talvimetsa_gameplay.png";
-import dagon_gameplay from "../images/dagon_gameplay.png";
+} from "../../CommonComponents.js";
+import "./ProjectsGallery.css";
+import { projects } from "../../data/projectsData.js";
+import talvimetsa_gameplay from "../../images/talvimetsa_gameplay.png";
+import dagon_gameplay from "../../images/dagon_gameplay.png";
 
-export default function ProjectsGallery() {
+export default function ProjectsSection() {
+  return (
+    <div>
+      <Section>
+        <h2 id="projects" className="SectionTitle">
+          04. some of my projects
+        </h2>
+
+        <ProjectsGallery />
+      </Section>
+    </div>
+  );
+}
+
+function ProjectsGallery() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedType, setSelectedType] = useState("all");
 
@@ -56,6 +70,12 @@ export default function ProjectsGallery() {
         >
           Web App
         </button>
+        <button
+          className={`FilterButton ${selectedType === "3d" ? "active" : ""}`}
+          onClick={() => handleFilterClick("3d")}
+        >
+          3D
+        </button>
       </div>
 
       {/* Gallery Grid */}
@@ -90,6 +110,11 @@ export default function ProjectsGallery() {
           <div className="ModalContent" onClick={(e) => e.stopPropagation()}>
             <h2>{selectedProject.title}</h2>
             <h3>{selectedProject.date}</h3>
+
+            <ImageSlideshow
+              images={[dagon_gameplay, talvimetsa_gameplay]}
+              project_title={selectedProject.title}
+            ></ImageSlideshow>
             <p>
               <a
                 href={selectedProject.link}
@@ -99,10 +124,6 @@ export default function ProjectsGallery() {
                 View on GitHub
               </a>
             </p>
-            <ImageSlideshow
-              images={[dagon_gameplay, talvimetsa_gameplay]}
-              project_title={selectedProject.title}
-            ></ImageSlideshow>
             <p>{selectedProject.description}</p>
 
             <button className="CloseModalButton" onClick={closeModal}>
@@ -179,26 +200,4 @@ function ImageSlideshow({ images, project_title }) {
       </div>
     </div>
   );
-}
-
-function GalleryItem({ project }) {
-  <div className="Card Column">
-    <header className="ImageHeader">
-      <a href={project.link} target="_blank" title={project.link}>
-        <img src={talvimetsa_gameplay} alt={project.title}></img>
-      </a>
-    </header>
-    <div>
-      <h3>
-        <div>
-          <a href={project.link} target="_blank" title={project.link}>
-            {project.title}
-          </a>
-        </div>
-        <div>{project.date}</div>
-      </h3>
-      <CollapsibleDescription fullDesc={project.description} />
-      <SkillsList skills={project.skills} />
-    </div>
-  </div>;
 }

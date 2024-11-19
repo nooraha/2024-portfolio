@@ -25,12 +25,16 @@
   gap: 20px;
 }
 
-.FilterButton {
+.FilterButton,
+.SlideshowButton,
+.CloseModalButton {
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.FilterButton:hover {
+.FilterButton:hover,
+.SlideshowButton:hover,
+.CloseModalButton:hover {
   background-color: var(--link_hovercolor);
 }
 
@@ -111,7 +115,10 @@
   font-weight: bold;
 }
 
-.Transitioning.next .CurrentImage {
+.SlideshowButton:hover {
+}
+
+.SlideshowButton .Transitioning.next .CurrentImage {
   animation: shrink 1s forwards ease-in-out;
   left: 0;
 }

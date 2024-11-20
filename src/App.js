@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Introduction from "./sections/Introduction.js";
+import Introduction from "./sections/introduction/Introduction.js";
 import AboutMeSection from "./sections/AboutMeSection.js";
 import WorkExperienceSection from "./sections/WorkExperienceSection.js";
 import EducationSection from "./sections/EducationSection.js";

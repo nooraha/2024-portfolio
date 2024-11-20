@@ -1,7 +1,7 @@
-import { Section } from "../CommonComponents.js";
-import self_portrait from "../images/cropped_cv_picture.png";
-import cv_2024 from "../CV.2024.5.pdf";
-import "../Introduction.css";
+import { Section } from "../../CommonComponents.js";
+import self_portrait from "../../images/cropped_cv_picture.png";
+import cv_2024 from "../../CV.2024.5.pdf";
+import "./Introduction.css";
 
 export default function Introduction() {
   return (
@@ -14,14 +14,16 @@ export default function Introduction() {
 function HeroPage() {
   return (
     <div className="HeroCard">
-      <div className="HeroLeft">
-        <p>Hello! I'm</p>
-        <h1>Noora Halla-aho</h1>
-        <h2>Junior Software Developer & 2D/3D Artist</h2>
-      </div>
-      <div className="HeroRight">
-        <ContactMeButton />
-        <DownloadCVButton />
+      <div className="Column">
+        <div className="TitleColumn">
+          <p>Hello! I'm</p>
+          <h1>Noora Halla-aho</h1>
+          <p>a Junior Software Developer</p>
+        </div>
+        <div className="TitleColumn">
+          <ContactMeButton />
+          <DownloadCVButton />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,73 @@
+.HeroCard {
+  background-image: url("../../images/cropped_cv_picture.png");
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: 30px;
+  border: 1px solid transparent;
+  background-clip: border-box;
+  background-color: var(--cardcolor);
+  border-radius: 15px;
+  padding: 25px;
+  height: 500px;
+  margin: -25px;
+  background-size: auto;
+}
+
+.ContactMeButton {
+  border: 1px var(--pagebordercolor);
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  height: 45px;
+  text-align: center;
+  color: var(--text_color);
+
+  border-radius: 30px;
+
+  cursor: pointer;
+  width: 200px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.Download-CV-Button {
+  padding: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+
+  height: 45px;
+  text-align: center;
+  width: 200px;
+}
+
+.ContactMeButton {
+  border: 1px solid transparent;
+  background-color: var(--accentcolor);
+  color: black;
+}
+
+.ContactMeButton a {
+  color: black;
+}
+
+.ContactMeButton:hover {
+  background-color: var(--link_hovercolor);
+}
+
+.TitleColumn p {
+  font-size: 20px;
+}
+.TitleColumn h1 {
+  font-size: 60px;
+  color: var(--accentcolor);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.TitleColumn {
+  justify-content: center;
+  align-content: center;
+  height: 150px;
+  margin: 25px;
+}

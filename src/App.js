@@ -6,7 +6,7 @@ import WorkExperienceSection from "./sections/WorkExperienceSection.js";
 import EducationSection from "./sections/EducationSection.js";
 import ProjectsSection from "./sections/ProjectsSection.js";
 import ArtSection from "./sections/ArtSection.js";
-import ContactMeSection from "./sections/ContactMeSection.js";
+import ContactMeSection from "./sections/contactme/ContactMeSection.js";
 
 function App() {
   return (

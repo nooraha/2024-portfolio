@@ -201,6 +201,10 @@
   margin-bottom: 10px;
 }
 
+.HalfWidth {
+  width: 50%;
+}
+
 .Invisible {
   background-color: transparent;
   border-color: transparent;
@@ -431,6 +435,12 @@
 
 .NormalText {
   font-weight: normal;
+}
+
+.RowToColumn {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
 }
 
 html {

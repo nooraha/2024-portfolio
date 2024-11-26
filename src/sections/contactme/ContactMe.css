@@ -1,0 +1,59 @@
+.EmailForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.EmailForm button {
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+
+.EmailForm button:hover {
+  background-color: var(--link_hovercolor);
+}
+
+input,
+textarea {
+  border: 1px solid var(--pagebordercolor);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--text_color);
+}
+
+.ContactRow {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+}
+
+.Popup {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 20px;
+  border: 1px solid var(--pagebordercolor);
+  border-radius: 10px;
+  color: var(--text_color);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    tramsform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .ContactRow {
+    flex-flow: column nowrap;
+  }
+}

@@ -293,6 +293,11 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.BulletDescription {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 .SkillsList {
   display: flex;
   flex-flow: row wrap;

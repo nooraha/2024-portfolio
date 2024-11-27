@@ -74,3 +74,16 @@ export function Timeline({ items, children }) {
     </div>
   );
 }
+
+export const BulletDescription = ({ fullDesc }) => {
+  return (
+    <ul className="BulletDescription">
+      {fullDesc.map((bullet, index) => (
+        <>
+          <li key={index}>{bullet}</li>
+          <br></br>
+        </>
+      ))}
+    </ul>
+  );
+};

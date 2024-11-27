@@ -12,7 +12,7 @@ export default function ProjectsSection() {
     <div>
       <Section>
         <h2 id="projects" className="SectionTitle">
-          04. some of my projects
+          04. My projects
         </h2>
 
         <ProjectsGallery />

@@ -1,9 +1,8 @@
 import {
   Section,
   SkillsList,
-  CollapsibleDescription,
-  TimeLineListItem,
   Timeline,
+  BulletDescription,
 } from "../CommonComponents.js";
 import { workExperience } from "../data/workexperienceData.js";
 
@@ -11,7 +10,7 @@ export default function WorkExperienceSection() {
   return (
     <Section>
       <h2 id="workexperience" className="SectionTitle">
-        02. my work experience
+        02. Work experience
       </h2>
       <Timeline items={workExperience}>
         {(item) => (
@@ -20,7 +19,7 @@ export default function WorkExperienceSection() {
               <div>{item.title}</div>
               <div>{item.type}</div>
             </h3>
-            <CollapsibleDescription fullDesc={item.description} />
+            <BulletDescription fullDesc={item.description} />
             <SkillsList skills={item.skills} />
           </div>
         )}
